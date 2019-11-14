@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Budget App</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h1>budget app</h1>
+
+      <form class="form-budget">
+        <label for="">Please Enter Your Budget</label> <br />
+        <input type="number" id="budget-field" /><br />
+        <div class="warning-budget d-none">
+          value cannot be empty or negative.
+        </div>
+        <button class="btn" id="calculate-btn">Calculate</button>
+      </form>
+
+      <form class="form-expense">
+        <label for="">Please Enter Your Expense Name</label> <br />
+        <input type="text" id="expense-name-field" /> <br />
+        <div class="warning-expense d-none">Expense name cannot be empty.</div>
+        <label for="">Please Enter Expense Amount</label> <br />
+        <input type="number" id="expense-value-field" /><br />
+        <button class="btn" id="add-expense-btn">Add Expense</button>
+      </form>
+
+      <div class="amts">
+        <ul class="amts-head">
+          <li>Budget</li>
+          <li>Expenses</li>
+          <li>Balance</li>
+        </ul>
+
+        <ul class="amts-icon">
+          <li><i class="fas fa-money-bill-alt"></i></li>
+          <li><i class="far fa-credit-card"></i></li>
+          <li><i class="fas fa-dollar-sign"></i></li>
+        </ul>
+        <ul class="amts-value">
+          <li class="clr-green" id="budget"><span>$</span>0</li>
+
+          <li class="clr-red" id="expense"><span>$</span>0</li>
+
+          <li id="balance"><span>$</span>0</li>
+        </ul>
+      </div>
+      <div class="expenses">
+        <ul class="expenses-head">
+          <li>Expense title</li>
+          <li>expense value</li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
