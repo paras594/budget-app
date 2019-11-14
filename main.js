@@ -105,12 +105,12 @@ window.onload = function() {
             <li>${obj.name}</li>
             <li>${obj.amt}</li>
             <li>
-            <button class="btn-edit">
-            <i class="fas fa-edit"></i>
-            </button>
-            <button class="btn-trash" id=${obj.id} onclick="greetings()">
-            <i class="fas fa-trash-alt"></i>
-            </button>
+                <button class="btn-edit">
+                <i class="fas fa-edit"></i>
+                </button>
+                <button class="btn-trash" id=${obj.id} onclick="greetings()">
+                <i class="fas fa-trash-alt"></i>
+                </button>
             </li>
             `;
 
